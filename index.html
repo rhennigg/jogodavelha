@@ -11,43 +11,78 @@
         <h1>
             JOGO DA VELHA
         </h1>
-        <div>
-            <div id="1" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
-            <div id="2" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
-            <div id="3" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
-        </div>
-        <div>
-            <div id="4" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
-            <div id="5" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
-            <div id="6" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
-        </div>
-        <div>
-            <div id="7" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
-            <div id="8" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
-            <div id="9" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
-        </div>
+        <div class='main'>
+            <div class='flex-one'>
+                <div class="line-one">
+                    <div id="1" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+                    <div id="2" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+                    <div id="3" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+                </div>
+                <div class="line-two">
+                    <div id="4" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+                    <div id="5" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+                    <div id="6" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+                </div>
+                <div class="line-three">
+                    <div id="7" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+                    <div id="8" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+                    <div id="9" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+                </div>
+            </div>
+            <div class="flex-dir">
+                <div class="flex-two">
+                    <div class="jogador">
+                        <label>
+                            Jogador:
+                        </label>
+                        <label id="jogador-selecionado">
 
-        <div class="jogador">
-            <label>
-                Jogador:
-            </label>
-            <label id="jogador-selecionado">
+                        </label>
+                    </div>
 
-            </label>
-        </div>
+                    <div class="vencedor">
+                        <label>
+                            Vencedor:
+                        </label>
+                        <label id="vencedor-selecionado">
 
-        <div class="vencedor">
-            <label>
-                Vencedor:
-            </label>
-            <label id="vencedor-selecionado">
+                        </label>
+                    </div>
+                    <div>
+                        <button onclick="reiniciar()">
+                            Reiniciar
+                        </button>
+                    </div>
+                </div>
+                <div class="flex-three">
+                    <div class="pontuacao">
+                        <label>
+                            Placar
+                        </label>
+                        <label id="jogador-selecionado">
 
-            </label>
-        </div>
-        <div>
-            <button onclick="reiniciar()">
-                Reiniciar
-            </button>
+                        </label>
+                    </div>
+                    <div class="jogador1">
+                        <label>
+                            X:
+                        </label>
+                        <label id="pont-j1">
+                            0
+                        </label>
+                    </div>
+                    <div class="jogador2">
+                        <label>
+                            O:
+                        </label>
+                        <label id="pont-j2">
+                            0
+                        </label>
+                    </div>
+                    <div>
+                    </div>
+                </div>
+            </div>
         </div>
         <script src="velha.js">
         </script>

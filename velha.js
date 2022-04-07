@@ -1,7 +1,10 @@
-let jogador, vencedor = null;
+let jogador = null, vencedor = null;
 let jogador_selecionado = document.getElementById('jogador-selecionado');
 let vencedor_selecionado = document.getElementById('vencedor-selecionado');
+let p1 = document.getElementById('pont-j1');
+let p2 = document.getElementById('pont-j2');
 let quadrados = document.getElementsByClassName('quadrado');
+let pontosx = 0, pontoso = 0;
 
 mudarJogador('X');
 
@@ -92,6 +95,12 @@ function mudaCorQuadrado(quadrado1,quadrado2,quadrado3){
 function mudarVencedor(quadrado){
     vencedor = quadrado.innerHTML;
     vencedor_selecionado.innerHTML = vencedor;
+    console.log(pontosx);
+    console.log(pontoso);
+    (vencedor == 'O')?(pontoso++):(pontosx++);
+    console.log(pontosx);
+    p1.innerHTML = pontosx;
+    p2.innerHTML = pontoso;
 }
 
 function checaSequencia(quadrado1, quadrado2, quadrado3){
@@ -110,8 +119,8 @@ function reiniciar() {
 
     for(let i=1; i<10; i++){
         let quadrado = document.getElementById(i);
-        quadrado.style.background = 'aqua';
-        quadrado.style.color = 'aqua';
+        quadrado.style.background = "rgb(40, 143, 143)";
+        quadrado.style.color = "rgb(40, 143, 143)";
         quadrado.innerHTML = '-';
     }
 

@@ -1,20 +1,30 @@
 body{
     text-align: center;
+    background-color: rgb(66, 30, 100);
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    color: aliceblue;
 }
 
 .quadrado{
     text-align: center;
     width: 50px;
-    background-color: aqua;
+    background-color: rgb(40, 143, 143);
     display: inline-block;
     padding: 40px;
     font-size: 60px;
     margin: 5px;
     cursor: pointer;
-    color: aqua;
+    color: rgb(40, 143, 143);
 }
 
-.jogador, .vencedor{
+.jogador, .vencedor, .flex-three{
     font-size: 30px;
     margin-top: 18px;
     color: red;
@@ -26,4 +36,39 @@ button{
     height: 30px;
     background-color: aqua;
     cursor: pointer;
+}
+
+.flex-one{
+    display: flex;
+    flex-direction: column;
+}
+
+.line-one{
+    display: flex;
+}
+
+.line-two{
+    display: flex;
+}
+
+.line-three{
+    display: flex;
+}
+
+.flex-two{
+    padding-top: 2rem;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-three{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+.flex-dir{
+    display: flex;
+    flex-direction: column;
 }
