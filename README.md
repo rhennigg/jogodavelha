@@ -1,5 +1,5 @@
 # jogodavelha
-Jogo da velha feito em HTML e JS como projeto do Órbi Web Games Developer.
+Jogo da velha feito em HTML e JS como projeto DIO Órbi Web Games Developer.
 
 O projeto foi implementado com algumas modificações como mudança de layout e estrutura usando Flex, além da adição de um placar.
 
